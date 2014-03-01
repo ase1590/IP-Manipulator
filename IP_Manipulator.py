@@ -10,7 +10,7 @@ import sys
 
 
 """IP Manipulator
-Given an IP Address, return various forms of dotted decimal, decimal, and/or hexidecimal.
+Given an IP Address, return various forms of dotted decimal, decimal, octal, and/or hexidecimal.
 
 Requires that all octal addresses begin with '0' and all hex begin with '0x' or '0X'
 """
@@ -147,7 +147,7 @@ def main():
         f.write(address)
     else:
       print '\n'
-      print '        IP Address Calculator        '
+      print '        IP Address Manipulator       '
       print '-'*37
       for address in converted_addresses:
         line = arg + ' ----> ' + address + '\n'
