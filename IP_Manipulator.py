@@ -22,7 +22,7 @@ def convert(address, base):
   # Search the address for periods
   dot_search = re.findall(r'\.', address)
   if len(dot_search) == 3:
-    search = re.findall(r'(\d+)\.(\d+)\.(\d+)\.(\d+)', address)
+    search = re.findall(r'(\w+)\.(\w+)\.(\w+)\.(\w+)', address)
     for addr in search:
       (a, b, c, d) = addr
       a = int(a, base)
@@ -51,7 +51,7 @@ def convert(address, base):
       cd = (c*256) + d        
       
   elif len(dot_search) == 1:
-    search = re.findall(r'(\d+)\.(\d+)', address)
+    search = re.findall(r'(\w+)\.(\w+)', address)
     for addr in search:
       (a, bcd) = addr
       a = int(a, base)
