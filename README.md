@@ -5,7 +5,10 @@ Small script to convert IP address between decimal, octal, and hex
 
 If not explicitly declared with options, octal values must begin with '0' and hex values must begin with'0x' or '0X'
 
-Usage: ./IP-Manipulator.py <ip_address> <options>
+Usage: 
+```sh
+./IP-Manipulator.py <ip_address> <options>
+```
 
 Options:
 
@@ -19,7 +22,7 @@ Options:
 
 
 Examples:
-
+```sh
  ./IP-Manipulator.py 192.168.1.1
 
  ./IP-Manipulator.py 0xc0.0xa8.0x1.0x1
@@ -27,3 +30,4 @@ Examples:
  ./IP-Manipulator.py 030052000401
 
  ./IP-Manipulator.py 192.168.1.1 -f output.txt
+ ```
